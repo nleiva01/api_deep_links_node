@@ -1,5 +1,8 @@
-  ## Run locally ✨ 
+  ## Requires node v18.16.0
+
   
+  ## Run locally ✨ 
+
   1. Install packages
   ~~~bash  
     npm install
