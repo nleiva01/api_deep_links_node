@@ -4,6 +4,7 @@ import cors from 'cors';
 import fs from 'fs';
 import { AdsRequest } from './ads';
 import { DeviceRequest } from './devices';
+import { AllDataRequest } from './allData';
 
 const app = express();
 const port = 3000;
@@ -13,6 +14,7 @@ app.use(bodyParser.json());
 app.use(cors());
 AdsRequest.setup(app)
 DeviceRequest.setup(app)
+AllDataRequest.setup(app)
 
 // Iniciar el servidor
 app.listen(port, () => {
